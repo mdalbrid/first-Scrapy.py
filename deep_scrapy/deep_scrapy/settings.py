@@ -21,6 +21,10 @@ NEWSPIDER_MODULE = 'deep_scrapy.spiders'
 ROBOTSTXT_OBEY = False
 
 FEED_EXPORT_ENCODING= "utf-8"
+
+#USER_AGENT = 'Mozilla/5.0 (Windows NT 5.1; rv:5.0) Gecko/20100101 Firefox/5.0'
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
+
 #FEED_EXPORT_FIELDS= ['link_thread']
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
@@ -66,9 +70,9 @@ FEED_EXPORT_ENCODING= "utf-8"
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'deep_scrapy.pipelines.DeepScrapyPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'deep_scrapy.pipelines.DeepScrapyPipeline': 800,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

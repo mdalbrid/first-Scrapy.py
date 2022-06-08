@@ -6,7 +6,17 @@
 from scrapy import signals
 
 # useful for handling different item types with a single interface
+
 from itemadapter import is_item, ItemAdapter
+
+from w3lib.http import basic_auth_header
+
+
+#class CustomProxyMiddleware(object):
+#    def process_request(self, request, spider):
+#            request.meta['proxy'] = "http://127.0.0.1:1080"
+#            request.meta['proxy'] = "<http://amsterdam.nl.socks.nordhold.net:1080>"
+#            request.headers['Proxy-Authorization'] = basic_auth_header('###########', '###########')
 
 
 class DeepScrapySpiderMiddleware:

@@ -6,10 +6,17 @@
 import scrapy
 
 
-class DeepScrapyItem(scrapy.Item):
-    name_thread = scrapy.Field()
-    link_thread = scrapy.Field()
-    author_thread = scrapy.Field()
-    data_thread = scrapy.Field()
+class ThreadItem(scrapy.Item):
+    thread_name = scrapy.Field()
+    thread_link = scrapy.Field()
+    thread_author = scrapy.Field()
+    create_date = scrapy.Field()
     last_message = scrapy.Field()
+    thread = scrapy.Field()
     
+class PostItem(scrapy.Item):
+    post_link = scrapy.Field()
+    post_author = scrapy.Field()
+    post_message = scrapy.Field()
+    post_datetime = scrapy.Field()
+    post = scrapy.Field()
