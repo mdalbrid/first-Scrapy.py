@@ -1,9 +1,8 @@
 # first-Scrapy.py
 
-Web Scraper Forum
-Program to scrap data about posts and their authors in discussions  forum.  
-As database was used Postgres.  
-For scraping used scrapy framework.  
+Web Scraper Forum  
+
+Program to scrap data about posts and their authors in discussions  forum. As database was used Postgres. For scraping used scrapy framework.  
 
 <br>
 
